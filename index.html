@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conference Attendee List</title>
+    <title>Conference Connections List</title>
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 20px; }
         #passwordForm, #sheetContainer { margin-top: 20px; }
@@ -11,17 +11,17 @@
     </style>
 </head>
 <body>
-    <h1>Conference Attendee List</h1>
+    <h1>Conference Connections List</h1>
     <div id="passwordForm">
         <input type="password" id="password" placeholder="Enter password">
-        <button onclick="checkPassword()">View Attendee List</button>
+        <button onclick="checkPassword()">View Connections List</button>
     </div>
     <div id="sheetContainer" style="display:none;"></div>
 
     <script>
         function checkPassword() {
             const password = document.getElementById('password').value;
-            if (password === "NSGC2024") {
+            if (password === "conferenceattendee2024") {
                 document.getElementById('passwordForm').style.display = 'none';
                 document.getElementById('sheetContainer').style.display = 'block';
                 document.getElementById('sheetContainer').innerHTML = '<iframe src="https://docs.google.com/spreadsheets/d/1qwqJEgY3gd2lsTYnSlM-zq210q5miHUwSMf_oWjds8A/pubhtml?gid=1306295980&single=true"></iframe>';
